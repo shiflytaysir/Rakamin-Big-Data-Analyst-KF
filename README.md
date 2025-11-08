@@ -18,15 +18,15 @@ This project was divided into three main phases as outlined in the final present
 • The Auto-detect schema feature was used during import to ensure correct data typing for all columns.
 
 ### Phase 2: Data Modeling & Transformation (SQL)
-• An Entity-Relationship Diagram (ERD) was designed to map the architecture and relationships between the source tables.
-• A comprehensive SQL query was written to perform the ETL process. This query (included in this repository) uses Common Table Expressions (CTEs) to:
+- An Entity-Relationship Diagram (ERD) was designed to map the architecture and relationships between the source tables.
+- A comprehensive SQL query was written to perform the ETL process. This query (included in this repository) uses Common Table Expressions (CTEs) to:
   - Join data from the three primary tables.
   - Engineer new features like persentase_gross_laba using CASE...WHEN logic based on business rules.
   - Create (CREATE TABLE) a final, unified analysis table (tabel_analisa) ready for visualization.
 
 ### Phase 3: Visualization & Analysis (Looker Studio)
-• The final tabel_analisa in BigQuery was connected to Google Looker Studio as the single source of truth.
-• An interactive dashboard was built to visualize KPIs, trends, and actionable insights.
+- The final tabel_analisa in BigQuery was connected to Google Looker Studio as the single source of truth.
+- An interactive dashboard was built to visualize KPIs, trends, and actionable insights.
 
 ## 4. Final Result: Business Performance Dashboard
 This interactive dashboard summarizes all key findings, tracking KPIs such as Total Profit, Revenue (YoY), Provincial Performance, and Product Analysis.
